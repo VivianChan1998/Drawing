@@ -1,0 +1,4 @@
+.Activity_container {
+    background: linear-gradient(180deg,rgba(130,107,166, 1), rgba(56, 40, 82, 0.788),rgb(24, 23, 23));
+    z-index: 10100;
+}

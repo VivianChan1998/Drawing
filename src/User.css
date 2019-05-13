@@ -1,0 +1,117 @@
+.User_head_container{
+    height: 120px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.User_info_container{
+    position: relative;
+    float: left;
+    width: 40%;
+    top:-30px;
+    height: 50px;
+    margin-left: 35px;
+    color: white;
+    font-size: 25px;
+    z-index: 1;
+    
+}
+
+.User_no_tab{
+    position: relative;
+    width: 100%;
+    height: 130px;
+    top:-100px;
+    background: linear-gradient(180deg, rgba(231, 110, 110, 0) 0%, rgb(233, 154, 144) 80%);
+    z-index: 0;
+    margin-bottom: -100px;
+}
+
+.User_body_container {
+    background: linear-gradient(180deg,  rgb(233, 154, 144), rgb(97, 46, 46));
+    padding-top: 20px;
+    padding-bottom: 50px;
+}
+.User_body_item_container {
+    display: table;
+    margin: auto;
+    position: relative;
+    width:80%;
+}
+
+.User_PicItem {
+    position: relative;
+    width: 30%;
+    height: 350px;
+    overflow: hidden;
+    float: left;
+    margin: 1%;
+    margin-top: 1.5%;
+
+}
+
+.User_PicItem_imgcontainer{
+    position: absolute;
+    
+    max-width:100%;
+    width: 100%;
+    height: 250px;
+    object-fit: fill;
+    overflow: hidden;
+    
+
+}
+.User_PicItem_imgcontainer img{
+    position: absolute;
+    max-width: 100%;
+    vertical-align: middle;
+    text-align:center;
+    margin: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    border: solid;
+    border-width: 1px;
+    border-color: white;
+}
+
+.User_PicItem:hover img{
+    transition: all 5s;
+    transform-origin: center;
+    transform: translateX(-12%) translateY(0%);
+    max-width: 120%;
+}
+
+.User_PicItem_text{
+    position: absolute;
+    width:100%;
+    bottom: 0px;
+    height:100px;
+    padding:15px;
+    border: solid;
+    border-width: 1px;
+    border-color: white;
+
+    background: none;
+    
+}
+
+.User_PicItem_text h5,p{
+    margin:2px;
+    margin-top:0px;
+    margin-bottom: 0px;
+
+    font-size: 18px;
+    color: white;
+}
+
+.User_PicItem_text h5{
+    font-size: 26px;
+}
+
+.User_PicItem:hover .User_PicItem_text{
+    transition: all 3s;
+    background: linear-gradient(140deg, rgba(231, 222, 222, 0.288), rgba(255, 255, 255, 0))
+}

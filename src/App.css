@@ -1,0 +1,136 @@
+.Drawing_Top_header {
+  position: static;
+  /*height: 60px;*/
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0),rgba(0, 0, 0, 0),rgba(88, 65, 62, 0.678));
+}
+
+.Drawing_Top_banner {
+  position: relative;
+  float: top;
+
+  height: 320px;
+  z-index: -1;
+
+  overflow: hidden;
+  object-fit: cover;
+
+}
+
+.Drawing_Top_logo {
+  display: flex;
+  position: absolute;
+  float: left!important;
+  margin-right: 70%;
+  margin-left: 20px;
+  margin-top:10px;
+  height: 60px;
+}
+
+.Drawing_Top_banner img{
+  position: absolute center;
+  padding: auto;
+  max-width: 100%;
+}
+
+.Drawing_Top_button_container {
+  display: flex;
+  position: absolute;
+  float: right!important;
+  margin-left: 70%;
+
+  height: 60px;
+  width: 30%;
+
+}
+.Drawing_Top_header_button {
+  display: inline;
+  margin: 20px;
+
+  text-transform: uppercase;
+  font-size: 20px;
+
+  background: none;
+  border: none;
+  
+}
+.Drawing_Top_header_button a{
+  color: #FFFFFF;
+  text-decoration: none;
+}
+.Drawing_Top_body {
+  position: relative;
+  top:-150px;
+  height:100%;
+  margin-bottom: -150px;
+
+
+}
+.Drawing_Top_tab {
+    height: 50px;
+}
+
+
+.Drawing_Top_tab img {
+  position: absolute;
+  height: 50px;
+  width: 72%;
+  float: left!important;
+  left: 0;
+  object-fit: cover;
+  filter: drop-shadow(-10px -10px 10px rgba(122, 60, 86, 0.37) );
+  z-index: 1;
+}
+
+
+.Drawing_Top_tab_text {
+  position: relative;
+  float: left;
+  height: 100%;
+  width: 24%;
+  padding-left: 50px;
+  padding-right: 20px;
+  padding-top: 8px;
+  margin:0;
+  /*margin-left: 3%;
+  margin-right: 5%;*/
+  font-size: 27px;
+  color: white;
+  z-index: 3;
+}
+
+.Drawing_Top_tab_text a{
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+.Drawing_Top_container {
+  /*height: 1500px;*/
+  padding: 88px;
+  padding-top: 46px;
+  min-height: 800px;
+}
+
+.Drawing_Top_footer {
+  position: relative;
+  height: 80px;
+  background: rgb(24,23,23);
+  color: rgb(255, 255, 255);
+  text-align: center;
+  padding: 20px;
+}
+
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.section_not_complete {
+  width: 70%;
+  object-fit: cover;
+  margin: auto;
+}
+
+.section_not_complete img{
+  max-width: 100%;
+}

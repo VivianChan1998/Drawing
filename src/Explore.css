@@ -1,0 +1,97 @@
+.Explore_container {
+    background: linear-gradient(180deg,rgba(211, 123, 123, 1), rgba(114, 38, 38, 0.788),rgb(24, 23, 23));
+    z-index: 10100;
+}
+
+.Explore_Title {
+    position: relative;
+    float: top;
+    top: -8px;
+    margin: 0;
+    margin-left: 30px;
+    height: 100px;
+    color: white;
+    filter: drop-shadow(-0px -0px 10px rgba(122, 60, 86, 0.877) );
+    z-index: 1;
+}
+.Explore_body_list {
+    width: 80%;
+    margin: 20px auto;
+    padding: 0;
+    list-style: none;
+}
+
+.Explore_container h2{
+    width: 80%;
+    margin: 20px auto;
+    font-size: 40px;
+
+}
+
+.Explore_body_list_item {
+    max-height: 380px;
+    overflow: hidden;
+    padding: 15px;
+    margin-bottom: 30px;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.123);
+    border: solid;
+    border-width: 1px;
+    border-color: white;
+    
+}
+
+.Explore_body_list_item:hover {
+    transition: all 1s;
+    box-shadow: 0px 0px 20px rgba(138, 44, 44, 0.5);
+    background: rgba(209, 193, 193, 0.5);
+}
+
+.Explore_body_list_item_imgcontainer {
+    position: relative;
+    float: left;
+    width: 60%;
+    height: 350px;
+    overflow: hidden;
+    object-fit: cover;
+    border-radius: 20px;
+    
+}
+
+.Explore_body_list_item img {
+    position: absolute;
+    width: 100%;
+}
+
+.Explore_body_list_item_text {
+    position: relative;
+    float: left!important;
+    height: 350px;
+    width: 40%;
+    padding-left: 50px;
+}
+
+.Explore_body_list_item_text h3{
+    font-size: 30px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    color: white;
+}
+.Explore_body_list_item_text p{
+    position: absolute;
+    height: 70%;
+    color: white;
+}
+
+.Explore_body_list_item_text h4{
+    position: absolute;
+    margin: 0;
+    bottom: 0;
+    font-size: 40px;
+    text-decoration: none;
+    color: white;
+}
+
+.Explore_body_list_item_text h4:hover {
+    color: rgb(110, 38, 38);
+}
