@@ -1,0 +1,20 @@
+{
+    "Juice":{
+        "Info": "Juice with a lot of sugar",
+        "Style": {
+            "bg": "#FFA488"
+        }
+    },
+    "AtkBear":{
+        "Info": "ROARRRRR",
+        "Style": {
+            "bg": "#4682B4"
+        }
+    },
+    "Avacado":{
+        "Info": "yummy yummy",
+        "Style": {
+            "bg": "#8FBC8F"
+        }
+    }
+}

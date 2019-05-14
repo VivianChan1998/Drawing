@@ -7,7 +7,7 @@ import Forum from './Forum'
 import Activity from './Activity'
 import User from './User'
 import '../App.css'
-import banner from '../img/banner1.png'
+import Banner from '../components/Banner'
 import logo from '../img/logo.png'
 
 class Top extends Component {
@@ -39,9 +39,7 @@ class Top extends Component {
                         <LinkButton text='forum' />
                         <LinkButton text='activity' />
                     </div>
-                    <div className='Drawing_Top_banner'>
-                        <img src={banner}></img>
-                    </div>
+                    <Banner />
                 </div>
                 
                 <div className='Drawing_Top_body'>

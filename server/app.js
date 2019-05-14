@@ -30,6 +30,9 @@ app.use("/getImg", getImg)
 var getRandomUser = require("./routes/getRandomUser")
 app.use("/getRandomUser", getRandomUser)
 
+var getUserInfo = require("./routes/getUserInfo")
+app.use("/getUserInfo", getUserInfo)
+
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'jade');

@@ -1,18 +1,19 @@
 var express = require("express");
-
 var router = express.Router();
 const fs = require('fs');
 
-var user_img, users;
+var users;
+
+fs.readFile( __dirname + '/users.json', "utf-8", (err, data) => {  
+    if (err) throw err;
+    users = JSON.parse(data);
+    users = users.users
+    console.log("UUU", users)
+});
 
 router.get("/",function(req, res, next)
 {
-    fs.readFile( __dirname + '/users.json', "utf-8", (err, data) => {  
-        if (err) throw err;
-        users = JSON.parse(data);
-        users = users.users
-        console.log("UUU", users)
-    });
+    
     var l = users.length;
     console.log(l,users)
     var r = Math.floor(Math.random()*l)

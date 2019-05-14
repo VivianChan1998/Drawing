@@ -5,7 +5,7 @@ class UserInfo extends Component {
     render() {
         return(
             <div className='User_info_container'>
-                <p>hello!!</p>
+                <p>{this.props.text}</p>
             </div>
         )
     }
