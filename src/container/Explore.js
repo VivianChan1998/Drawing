@@ -16,6 +16,7 @@ class Explore extends Component {
                     <ul className='Explore_body_list'>
                         <ExploreItem />
                         <ExploreItem />
+                        <ExploreItem />
                     </ul>
                 </div>
             </div>

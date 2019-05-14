@@ -56,14 +56,14 @@
     max-width:100%;
     width: 100%;
     height: 250px;
-    object-fit: fill;
+    object-fit: cover;
     overflow: hidden;
     
 
 }
 .User_PicItem_imgcontainer img{
     position: absolute;
-    max-width: 100%;
+    max-height: 150%;
     vertical-align: middle;
     text-align:center;
     margin: auto;
@@ -75,13 +75,14 @@
     border: solid;
     border-width: 1px;
     border-color: white;
+    object-fit: cover;
 }
 
 .User_PicItem:hover img{
     transition: all 5s;
     transform-origin: center;
     transform: translateX(-12%) translateY(0%);
-    max-width: 120%;
+    height: 200%;
 }
 
 .User_PicItem_text{

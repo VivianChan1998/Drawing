@@ -20,8 +20,15 @@ app.use(express.static(path.join(__dirname, 'build')));
 
 app.use(cors());
 
+//TODOs
 var getUser = require("./routes/getuser");
 app.use("/getUser", getUser);
+
+var getImg = require("./routes/getpicture");
+app.use("/getImg", getImg)
+
+var getRandomUser = require("./routes/getRandomUser")
+app.use("/getRandomUser", getRandomUser)
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
@@ -30,7 +37,7 @@ app.set('view engine', 'jade');
 app.use('/api', index);
 app.get('*', (req, res) => {
   res.sendFile('build/index.html', { root: global });
-});
+})
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
