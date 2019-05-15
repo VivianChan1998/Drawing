@@ -11,7 +11,8 @@ class User extends Component {
         this.state = {
             img_list: [],
             info: {},
-            style: {}
+            style: {},
+            style_title_dropshadow: {}
         }
     }
     setStyle(){
@@ -37,6 +38,9 @@ class User extends Component {
                 },
                 style_bg :{
                     'background': 'linear-gradient(180deg, ' + res.Style.bg + ',rgb(40, 40, 40))'
+                },
+                style_title_dropshadow: {
+                    'filter': 'drop-shadow(-0px -0px 10px'+ res.Style.bg +')'
                 }
             }))
         console.log("callAPIIII")
@@ -50,7 +54,7 @@ class User extends Component {
             <div>
                 
                 <div className='User_head_container'>
-                    <TopTitle text={this.props.NAME} />
+                    <TopTitle text={this.props.NAME} style={this.state.style_title_dropshadow}/>
                     <UserInfo text={this.state.info.Info} />
                 </div>
                 

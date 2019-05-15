@@ -5,7 +5,7 @@ class Banner extends Component {
     render() {
         return(
             <div className='Drawing_Top_banner'>
-                <img src={banner}></img>
+                <img src={this.props.source}></img>
             </div>
         )
     }

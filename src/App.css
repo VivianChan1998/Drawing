@@ -1,7 +1,7 @@
 .Drawing_Top_header {
   position: static;
   /*height: 60px;*/
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0),rgba(0, 0, 0, 0),rgba(88, 65, 62, 0.678));
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0),rgba(0, 0, 0, 0),rgba(95, 95, 95, 0.678));
 }
 
 .Drawing_Top_banner {
@@ -14,6 +14,7 @@
   overflow: hidden;
   object-fit: cover;
 
+  
 }
 
 .Drawing_Top_logo {
@@ -27,9 +28,11 @@
 }
 
 .Drawing_Top_banner img{
-  position: absolute center;
-  padding: auto;
-  max-width: 100%;
+  position: absolute;
+  top:0;
+  bottom: 0;
+  margin:auto;
+  width: 100%;
 }
 
 .Drawing_Top_button_container {
@@ -40,6 +43,7 @@
 
   height: 60px;
   width: 30%;
+  z-index: 100;
 
 }
 .Drawing_Top_header_button {
@@ -51,6 +55,7 @@
 
   background: none;
   border: none;
+  
   
 }
 .Drawing_Top_header_button a{
@@ -119,10 +124,38 @@
   padding: 20px;
 }
 
+.Jumpout_whole {
+  z-index: 100;
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  background: rgba(75, 75, 75, 0.548)
+  
+}
+
+.Jumpout_window {
+  background: #FFFFFF;
+  z-index: 101;
+  position: fixed;
+  height: 60%;
+  width: 30%;
+  margin-left: 35%;
+  margin-right: 35%;
+  margin-top: 10%;
+  margin-bottom: 20%;
+  border-radius: 20px;
+}
 
 @keyframes App-logo-spin {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
+}
+
+@font-face {
+  font-family: 'password';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://jsbin-user-assets.s3.amazonaws.com/rafaelcastrocouto/password.ttf);
 }
 
 .section_not_complete {

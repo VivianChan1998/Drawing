@@ -30,7 +30,7 @@ class ExploreItem extends Component {
         this.callAPI();
     }
     render() {
-        console.log(this.state.user)
+        //console.log(this.state.user)
         return(
             <li className='Explore_body_list_item'>
                 <NavLink to={'/'+this.state.user}>

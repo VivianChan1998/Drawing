@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { NavLink, Switch, Route} from 'react-router-dom';
+import { NavLink, withRouter} from 'react-router-dom';
 
 class LinkButton extends Component {
     constructor(props)
@@ -11,17 +11,18 @@ class LinkButton extends Component {
     }
 
     render() {
+        //console.log("BUTTON", this.state.text)
         return (
             <div>
-                <button className='Drawing_Top_header_button'>
-                    <NavLink to={this.state.text}>
+                <span className='Drawing_Top_header_button' onClick={() => console.log("hello")}>
+                    <NavLink activeStyle={{borderBottom: '4px solid #FFFFFF'}} to={this.state.text}>
                         {this.props.text}
                     </NavLink>
-                </button>
+                </span>
             </div>
         )
     }
     
 }
 
-export default LinkButton;
+export default withRouter(LinkButton);

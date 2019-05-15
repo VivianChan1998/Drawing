@@ -4,6 +4,7 @@ import img from '../img/Juice/5.png'
 
 class UserPicItem extends Component {
     render() {
+        
         return(
             <div className='User_PicItem'>
                 <div className='User_PicItem_imgcontainer'>

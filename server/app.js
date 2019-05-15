@@ -33,6 +33,12 @@ app.use("/getRandomUser", getRandomUser)
 var getUserInfo = require("./routes/getUserInfo")
 app.use("/getUserInfo", getUserInfo)
 
+var getbanner = require("./routes/getbanner")
+app.use("/getbanner", getbanner)
+
+var handleLogin = require("./routes/handleLogin")
+app.use("/handleLogin", handleLogin)
+
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'jade');

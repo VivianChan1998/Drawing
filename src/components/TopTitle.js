@@ -4,7 +4,7 @@ import { NavLink, Switch, Route} from 'react-router-dom';
 class TopTitle extends Component {
     render() {
         return(
-            <div className='Explore_Title'>
+            <div className='Explore_Title' style={this.props.style}>
                 <h1 className='Explore_Title_text'>{this.props.text}</h1>
             </div>
         )

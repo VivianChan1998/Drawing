@@ -1,20 +1,23 @@
 {
     "Juice":{
+        "PW": "123",
         "Info": "Juice with a lot of sugar",
         "Style": {
             "bg": "#FFA488"
         }
     },
     "AtkBear":{
+        "PW": "123",
         "Info": "ROARRRRR",
         "Style": {
             "bg": "#4682B4"
         }
     },
     "Avacado":{
-        "Info": "yummy yummy",
+        "PW": "123",
+        "Info": "Studying...",
         "Style": {
-            "bg": "#8FBC8F"
+            "bg": "#c2d6d6"
         }
     }
 }

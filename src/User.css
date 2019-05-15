@@ -20,7 +20,7 @@
 .User_no_tab{
     position: relative;
     width: 100%;
-    height: 130px;
+    height: 120px;
     top:-100px;
     background: linear-gradient(180deg, rgba(231, 110, 110, 0) 0%, rgb(233, 154, 144) 80%);
     z-index: 0;
