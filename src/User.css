@@ -25,6 +25,7 @@
     background: linear-gradient(180deg, rgba(231, 110, 110, 0) 0%, rgb(233, 154, 144) 80%);
     z-index: 0;
     margin-bottom: -100px;
+
 }
 
 .User_body_container {
@@ -39,6 +40,7 @@
     width:80%;
 }
 
+
 .User_PicItem {
     position: relative;
     width: 30%;
@@ -47,7 +49,6 @@
     float: left;
     margin: 1%;
     margin-top: 1.5%;
-
 }
 
 .User_PicItem_imgcontainer{
@@ -58,7 +59,7 @@
     height: 250px;
     object-fit: cover;
     overflow: hidden;
-    
+    opacity: 1;
 
 }
 .User_PicItem_imgcontainer img{

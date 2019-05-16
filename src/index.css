@@ -1,8 +1,11 @@
 body {
-  margin: 0;
-  padding: 0px;
   font-family: 'Baloo Bhai', cursive;
+}
 
+body, html{
+  margin:0;
+  padding:0;
+  width:100%;
 }
 
 * {

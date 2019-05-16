@@ -25,50 +25,77 @@
   margin-left: 20px;
   margin-top:10px;
   height: 60px;
+  object-fit: cover;
+  object-position: center;
 }
 
 .Drawing_Top_banner img{
-  position: absolute;
-  top:0;
-  bottom: 0;
-  margin:auto;
-  width: 100%;
+  position: fixed;
+  min-height: 140%;
+  top: -40%;
+  min-width: 100%;
+  max-width: 160%;
 }
 
+
 .Drawing_Top_button_container {
-  display: flex;
-  position: absolute;
+  display: block;
+  position: relative;
   float: right!important;
-  margin-left: 70%;
+  /*margin-left: 70%;*/
 
   height: 60px;
-  width: 30%;
+  width: 40%;
   z-index: 100;
 
 }
+
 .Drawing_Top_header_button {
-  display: inline;
-  margin: 20px;
+  display: absolute;
+  right: 0;
 
   text-transform: uppercase;
   font-size: 20px;
 
   background: none;
+  margin:0;
+  padding: 2%;
+  text-align: right;
+
   border: none;
-  
-  
 }
+
 .Drawing_Top_header_button a{
   color: #FFFFFF;
   text-decoration: none;
+  width: 120px;
 }
+
+.Drawing_Top_header_button a:hover{
+  border-bottom: solid 4px;
+  border-color: rgba(255, 255, 255, 0.411)
+}
+
+.status_button {
+  border: solid 2px;
+  margin: 5px;
+  margin-top: 7px;
+  padding-top: 4px;
+  padding-bottom: 3px;
+  border-radius: 8px;
+}
+
+.status_button:hover {
+  background: rgba(255, 255, 255, 0.37);
+  border: solid 2px;
+  border-color: rgba(255, 255, 255, 0.781);
+}
+
 .Drawing_Top_body {
   position: relative;
   top:-150px;
   height:100%;
   margin-bottom: -150px;
-
-
 }
 .Drawing_Top_tab {
     height: 50px;
@@ -113,6 +140,7 @@
   padding: 88px;
   padding-top: 46px;
   min-height: 800px;
+  width:100%;
 }
 
 .Drawing_Top_footer {
@@ -134,7 +162,8 @@
 }
 
 .Jumpout_window {
-  background: #FFFFFF;
+  background: rgba(255, 255, 255, 0.911);
+  filter: drop-shadow(0px 0px 20px, rgba(0, 0, 0, 0.692));
   z-index: 101;
   position: fixed;
   height: 60%;
@@ -144,6 +173,70 @@
   margin-top: 10%;
   margin-bottom: 20%;
   border-radius: 20px;
+  padding: 60px;
+  /*background: linear-gradient(0deg, rgba(255, 199, 176, 0.89), rgb(236, 228, 153));*/
+  animation: color-in-out 4s infinite;
+  
+}
+
+@keyframes color-in-out {
+  0% {
+    background: rgba(255, 243, 176, 0.89);
+  }
+  50% {
+    background: rgba(255, 183, 150, 0.89);
+  }
+  100% {
+    background: rgba(255, 243, 176, 0.89);
+  }
+}
+
+
+.Jumpout_x {
+  position: absolute;
+  right:0;
+  top:0;
+  float: right;
+  padding: 5px;
+  padding-right: 20px; 
+  font-size: 30px;
+  border: none;
+  background: none;
+  color: gray;
+}
+.Jumpout_x:hover {
+  color: black;
+  font-size: 40px;
+}
+
+.Jumpout_window img {
+  margin-left: 15%;
+  margin-right: 15%;
+  width: 70%;
+}
+.Jumpout_window div {
+  height: 50px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.Jumpout_window h5 {
+  display: inline;
+  font-size: 20px;
+  margin-right: 10px;
+  margin: 0;
+  color: #FFFFFF;
+}
+
+.Jumpout_window input {
+  display: absolute;
+  float: right;
+  width: 60%;
+  height: 35px;
+  padding: 10px;
+  border-radius: 20px;
+  border: solid 2px;
+  border-color: #FFFFFF;
 }
 
 @keyframes App-logo-spin {

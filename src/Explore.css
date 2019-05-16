@@ -1,5 +1,5 @@
 .Explore_container {
-    background: linear-gradient(180deg,rgba(211, 123, 123, 1), rgba(114, 38, 38, 0.788),rgb(24, 23, 23));
+    background: linear-gradient(180deg,rgba(211, 123, 123, 1),rgba(114, 38, 38, 0.596), rgba(114, 38, 38, 0.596),rgba(24, 23, 23, 0.63));
     z-index: 10100;
 }
 
@@ -10,6 +10,8 @@
     margin: 0;
     margin-left: 30px;
     height: 100px;
+    white-space:nowrap;
+    overflow: hidden;
     color: white;
     /*filter: drop-shadow(-0px -0px 10px rgba(122, 60, 86, 0.877) );*/
     z-index: 1;

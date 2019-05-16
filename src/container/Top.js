@@ -30,8 +30,8 @@ class Top extends Component {
             id:'',
             pw:'',
             LoginID: '',
-            HelloMessage: <h5>Hello! Guest </h5>,
-            StatusButton: <button onClick={() => this.jumpout()} >Login</button>
+            HelloMessage: <span className='Drawing_Top_header_button'>Hello! Guest </span>,
+            StatusButton: <button className='Drawing_Top_header_button status_button' onClick={() => this.jumpout()} >Login</button>
         }
     }
     callAPI() {
@@ -69,6 +69,7 @@ class Top extends Component {
     }
     callSendLoginAPI() {
         let ID = this.state.id;
+        let str = 'Hello ' + ID
         fetch('http://localhost:3001/handleLogin', {
             method: 'POST',
             headers:{
@@ -86,16 +87,16 @@ class Top extends Component {
             if(res === 'Success!') this.setState({
                 jumpoutwindow: {'display': 'none'},
                 LoginID: ID,
-                HelloMessage: <h5>Hello! {ID} </h5>,
-                StatusButton: <button onClick={() => this.logout()} >Log out</button>
+                HelloMessage: <LinkButton text={ID} className='Drawing_Top_header_button' />,
+                StatusButton: <button className='Drawing_Top_header_button status_button' onClick={() => this.logout()} >Log out</button>
             })
         })
     }
     logout() {
         this.setState({
             LoginID: '',
-            HelloMessage: <h5>Hello! Guest </h5>,
-            StatusButton: <button onClick={() => this.jumpout()} >Login</button>
+            HelloMessage: <span className='Drawing_Top_header_button'>Hello! Guest </span>,
+            StatusButton: <button className='Drawing_Top_header_button status_button' onClick={() => this.jumpout()} >Login</button>
         })
     }
     handlesubmit() {
@@ -122,18 +123,24 @@ class Top extends Component {
             <div>
                 <div className='Jumpout_whole' style={this.state.jumpoutwindow}>
                     <div className='Jumpout_window'>
-                        <button onClick={() => this.jumpoutclose()}>X</button>
-                        <h5>ID:</h5>
-                        <input name='id' value={this.state.id} onChange={(evt)=>this.handleInput(evt)}></input>
-                        <h5>Password:</h5>
-                        <input name='pw'value={this.state.pw} onChange={(evt)=>this.handleInput(evt)} style={{'font-family':'password'}}></input>
+                        <button className='Jumpout_x' onClick={() => this.jumpoutclose()}>X</button>
+                        <img src={logo} />
+                        <div>
+                            <h5>ID</h5>
+                            <input name='id' value={this.state.id} onChange={(evt)=>this.handleInput(evt)}></input>
+                        </div>
+                        <div>
+                            <h5>Password</h5>
+                            <input name='pw'value={this.state.pw} onChange={(evt)=>this.handleInput(evt)} style={{'font-family':'password'}}></input>
+                        </div>
+                        
                         <button onClick={() => this.handlesubmit()}>Log in</button>
                     </div>
                 </div>
                 <div className='Drawing_Top_header'>
                     <img src={logo} className= 'Drawing_Top_logo'/>
-                    {this.state.HelloMessage}
                     <div className='Drawing_Top_button_container'>
+                        {this.state.HelloMessage}
                         <LinkButton text='explore' />
                         <LinkButton text='forum' />
                         <LinkButton text='activity' />

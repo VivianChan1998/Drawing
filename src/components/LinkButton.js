@@ -13,13 +13,11 @@ class LinkButton extends Component {
     render() {
         //console.log("BUTTON", this.state.text)
         return (
-            <div>
-                <span className='Drawing_Top_header_button' onClick={() => console.log("hello")}>
-                    <NavLink activeStyle={{borderBottom: '4px solid #FFFFFF'}} to={this.state.text}>
-                        {this.props.text}
-                    </NavLink>
-                </span>
-            </div>
+            <span className='Drawing_Top_header_button' onClick={() => console.log("hello")}>
+                <NavLink activeStyle={{borderBottom: '4px solid #FFFFFF'}} to={this.state.text}>
+                    {this.props.text}
+                </NavLink>
+            </span>
         )
     }
     
