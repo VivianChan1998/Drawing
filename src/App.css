@@ -11,7 +11,7 @@
   height: 320px;
   z-index: -1;
 
-  overflow: hidden;
+  /*overflow: hidden;*/
   object-fit: cover;
 
   
@@ -175,19 +175,25 @@
   border-radius: 20px;
   padding: 60px;
   /*background: linear-gradient(0deg, rgba(255, 199, 176, 0.89), rgb(236, 228, 153));*/
-  animation: color-in-out 4s infinite;
+  animation: color-in-out 20s infinite;
   
 }
 
 @keyframes color-in-out {
   0% {
-    background: rgba(255, 243, 176, 0.89);
+    background: rgb(255, 223, 176);
+  }
+  25% {
+    background: rgb(218, 143, 120);
   }
   50% {
-    background: rgba(255, 183, 150, 0.89);
+    background: rgb(129, 188, 255);
+  }
+  75% {
+    background: rgba(116, 185, 159, 0.993);
   }
   100% {
-    background: rgba(255, 243, 176, 0.89);
+    background: rgb(255, 223, 176);
   }
 }
 

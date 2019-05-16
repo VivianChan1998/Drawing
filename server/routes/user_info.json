@@ -10,14 +10,14 @@
         "PW": "123",
         "Info": "ROARRRRR",
         "Style": {
-            "bg": "#4682B4"
+            "bg": "#A2B4B0"
         }
     },
     "Avacado":{
         "PW": "123",
         "Info": "Studying...",
         "Style": {
-            "bg": "#c2d6d6"
+            "bg": "#A5ABC0"
         }
     }
 }
