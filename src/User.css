@@ -25,7 +25,17 @@
     background: linear-gradient(180deg, rgba(231, 110, 110, 0) 0%, rgb(233, 154, 144) 80%);
     z-index: 0;
     margin-bottom: -100px;
+}
 
+.User_jumpout {
+    position: absolute;
+    top: -150px;
+    background: rgba(44, 44, 44, 0.685);
+}
+.User_jumpout .User_jumpoutWindow {
+    background: rgba(58, 58, 58, 0.938);
+    animation: none;
+    
 }
 
 .User_body_container {

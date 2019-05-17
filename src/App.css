@@ -45,7 +45,7 @@
   /*margin-left: 70%;*/
 
   height: 60px;
-  width: 40%;
+  width: 50%;
   z-index: 100;
 
 }
@@ -53,6 +53,7 @@
 .Drawing_Top_header_button {
   display: absolute;
   right: 0;
+  float:right;
 
   text-transform: uppercase;
   font-size: 20px;
@@ -224,6 +225,7 @@
   height: 50px;
   padding-top: 10px;
   padding-bottom: 10px;
+  margin: 10px;
 }
 
 .Jumpout_window h5 {
@@ -235,7 +237,7 @@
 }
 
 .Jumpout_window input {
-  display: absolute;
+  
   float: right;
   width: 60%;
   height: 35px;
@@ -243,6 +245,25 @@
   border-radius: 20px;
   border: solid 2px;
   border-color: #FFFFFF;
+}
+
+.Jumpout_submit {
+  position: relative;
+  bottom: 0;
+  margin-left: 35%;
+  margin-right: 35%;
+  margin-top: 50px;
+  width:30%;
+  padding: 10px;
+  border: solid 2px;
+  border-color: white;
+  border-radius: 8px;
+  font-size: 15px;
+  background: rgba(255, 255, 255, 0.37);
+}
+
+.Jumpout_submit:hover {
+  background: rgba(255, 255, 255, 0.637);
 }
 
 @keyframes App-logo-spin {
@@ -256,7 +277,9 @@
   font-weight: 400;
   src: url(https://jsbin-user-assets.s3.amazonaws.com/rafaelcastrocouto/password.ttf);
 }
-
+.NONEdisplay {
+  display: none;
+}
 .section_not_complete {
   width: 70%;
   object-fit: cover;

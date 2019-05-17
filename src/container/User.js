@@ -12,7 +12,8 @@ class User extends Component {
             img_list: [],
             info: {},
             style: {},
-            style_title_dropshadow: {}
+            style_title_dropshadow: {},
+            upload_button: ''
         }
     }
     setStyle(){
@@ -43,17 +44,60 @@ class User extends Component {
                     'filter': 'drop-shadow(-0px -0px 10px'+ res.Style.bg +')'
                 }
             }))
-        console.log("callAPIIII")
     }
     componentWillMount() {
         this.callAPI();
     }
 
+    jumpoutclose(i) {
+        //this.setState({jumpoutwindow: {'display': 'none'}})
+        document.getElementById(i).setAttribute('class', 'NONEdisplay User_jumpout')
+    }
+
+    jumpout(i) {
+        //console.log("jumpout")
+        //this.setState({jumpoutwindow: {'display': 'block'}})
+        //document.getElementById(i).setAttribute('class', 'NONEdisplay')
+        var e = document.getElementById(i)
+        if(e.classList.contains('NONEdisplay'))
+            e.classList.remove("NONEdisplay")
+    }
+
+    checkLogin() {
+        let n = this.props.NAME
+        let l = this.props.LOGIN
+        console.log(this.props.NAME)
+        console.log(this.props.LOGIN)
+        console.log(n===l)
+        if(this.props.NAME === this.props.LOGIN) {
+            console.log('verified')
+            this.setState({
+                upload_button: <button onClick={() => this.jumpout('upload')}>upload</button>
+            })
+        }
+    }
+
     render() {
         return (
             <div>
+                <div className='NONEdisplay User_jumpout' id='upload' >
+                    <div className='Jumpout_window User_jumpoutWindow'>
+                        <button className='Jumpout_x' onClick={() => this.jumpoutclose('upload')}>X</button>
+                        <div>
+                            <h5>Title</h5>
+                            <input name='Title' value='id' ></input>
+                        </div>
+                        <div>
+                            <h5>Content</h5>
+                            <input name='Content' value='pw' style={{'font-family':'password'}}></input>
+                        </div>
+
+                        <button className='Jumpout_submit' >Log in</button>
+                    </div>
+                </div>
                 
                 <div className='User_head_container'>
+                    {this.state.upload_button}
                     <TopTitle text={this.props.NAME} style={this.state.style_title_dropshadow}/>
                     <UserInfo text={this.state.info.Info} />
                 </div>
