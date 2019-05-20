@@ -39,6 +39,9 @@ app.use("/getbanner", getbanner)
 var handleLogin = require("./routes/handleLogin")
 app.use("/handleLogin", handleLogin)
 
+var appendUserImg = require("./routes/appendUserImg")
+app.use("/appendUserImg", appendUserImg)
+
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'jade');
