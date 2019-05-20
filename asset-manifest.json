@@ -1,16 +1,21 @@
 {
   "files": {
-    "main.css": "/static/css/main.b80217f8.chunk.css",
-    "main.js": "/static/js/main.b01ef583.chunk.js",
-    "main.js.map": "/static/js/main.b01ef583.chunk.js.map",
-    "runtime~main.js": "/static/js/runtime~main.a8a9905a.js",
-    "runtime~main.js.map": "/static/js/runtime~main.a8a9905a.js.map",
-    "static/js/2.6a5fb4c1.chunk.js": "/static/js/2.6a5fb4c1.chunk.js",
-    "static/js/2.6a5fb4c1.chunk.js.map": "/static/js/2.6a5fb4c1.chunk.js.map",
-    "index.html": "/index.html",
-    "precache-manifest.6de067cd1bd1a4279743227ab68a818f.js": "/precache-manifest.6de067cd1bd1a4279743227ab68a818f.js",
-    "service-worker.js": "/service-worker.js",
-    "static/css/main.b80217f8.chunk.css.map": "/static/css/main.b80217f8.chunk.css.map",
-    "static/media/logo.svg": "/static/media/logo.5d5d9eef.svg"
+    "main.css": "/midterm_Drawing/static/css/main.84907fab.chunk.css",
+    "main.js": "/midterm_Drawing/static/js/main.a6011c13.chunk.js",
+    "main.js.map": "/midterm_Drawing/static/js/main.a6011c13.chunk.js.map",
+    "runtime~main.js": "/midterm_Drawing/static/js/runtime~main.0b3bf91f.js",
+    "runtime~main.js.map": "/midterm_Drawing/static/js/runtime~main.0b3bf91f.js.map",
+    "static/js/2.1e68bc25.chunk.js": "/midterm_Drawing/static/js/2.1e68bc25.chunk.js",
+    "static/js/2.1e68bc25.chunk.js.map": "/midterm_Drawing/static/js/2.1e68bc25.chunk.js.map",
+    "index.html": "/midterm_Drawing/index.html",
+    "precache-manifest.c0a5a2ae1e3fa7971f9412998e61b1ab.js": "/midterm_Drawing/precache-manifest.c0a5a2ae1e3fa7971f9412998e61b1ab.js",
+    "service-worker.js": "/midterm_Drawing/service-worker.js",
+    "static/css/main.84907fab.chunk.css.map": "/midterm_Drawing/static/css/main.84907fab.chunk.css.map",
+    "static/media/5.png": "/midterm_Drawing/static/media/5.d516058f.png",
+    "static/media/Juice1.jpg": "/midterm_Drawing/static/media/Juice1.f47038f7.jpg",
+    "static/media/banner1.png": "/midterm_Drawing/static/media/banner1.f6c8f4ad.png",
+    "static/media/logo.png": "/midterm_Drawing/static/media/logo.91671d8c.png",
+    "static/media/notdone.png": "/midterm_Drawing/static/media/notdone.e5f2c3ba.png",
+    "static/media/tab1.png": "/midterm_Drawing/static/media/tab1.6d40bee7.png"
   }
 }
