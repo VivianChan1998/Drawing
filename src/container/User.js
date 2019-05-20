@@ -13,7 +13,8 @@ class User extends Component {
             info: {},
             style: {},
             style_title_dropshadow: {},
-            upload_button: ''
+            upload_button: '',
+            login_id: this.props.LOGIN
         }
     }
     setStyle(){
@@ -78,6 +79,14 @@ class User extends Component {
     }
 
     render() {
+        var own_interface = {
+            upload_button: ''
+        };
+        if(this.props.NAME === this.props.LOGIN) {
+            own_interface = {
+                upload_button: <button onClick={() => this.jumpout('upload')}>upload</button>
+            }
+        }
         return (
             <div>
                 <div className='NONEdisplay User_jumpout' id='upload' >
@@ -85,11 +94,11 @@ class User extends Component {
                         <button className='Jumpout_x' onClick={() => this.jumpoutclose('upload')}>X</button>
                         <div>
                             <h5>Title</h5>
-                            <input name='Title' value='id' ></input>
+                            <input name='Title' value='' ></input>
                         </div>
                         <div>
                             <h5>Content</h5>
-                            <input name='Content' value='pw' style={{'font-family':'password'}}></input>
+                            <input name='Content' value='' style={{'font-family':'password'}}></input>
                         </div>
 
                         <button className='Jumpout_submit' >Log in</button>
@@ -97,7 +106,7 @@ class User extends Component {
                 </div>
                 
                 <div className='User_head_container'>
-                    {this.state.upload_button}
+                    {own_interface.upload_button}
                     <TopTitle text={this.props.NAME} style={this.state.style_title_dropshadow}/>
                     <UserInfo text={this.state.info.Info} />
                 </div>

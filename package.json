@@ -11,6 +11,7 @@
     "cors": "^2.8.5",
     "debug": "~2.6.3",
     "express": "^4.16.4",
+    "gh-pages": "^2.0.1",
     "jade": "^1.11.0",
     "jsonfile": "^5.0.0",
     "morgan": "^1.9.1",
@@ -35,7 +36,9 @@
     "start": "concurrently \"react-scripts start\" \"nodemon server/server.js\"",
     "build": "react-scripts build && mv build server",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "proxy": "http://localhost:3001",
   "browserslist": {
@@ -49,5 +52,6 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+  "homepage": "https://VivianChan1998.github.io/midterm_Drawing"
 }
