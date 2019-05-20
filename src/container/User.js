@@ -167,7 +167,7 @@ class User extends Component {
     }
 
     render() {
-        console.log(this.state.img_list)
+        //console.log(this.state.img_list)
         var own_interface = {
             upload_button: ''
         };

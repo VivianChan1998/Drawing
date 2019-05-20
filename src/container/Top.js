@@ -29,6 +29,9 @@ class Top extends Component {
             },
             id:'',
             pw:'',
+            pw2: '',
+            Info: '',
+            color: '',
             LoginID: '',
             HelloMessage: <span className='Drawing_Top_header_button'>Hello! Guest </span>,
             StatusButton: <button className='Drawing_Top_header_button status_button' onClick={() => this.jumpout('login')} >Login</button>,
@@ -100,7 +103,27 @@ class Top extends Component {
                 this.jumpoutclose('login')
             }
         })
-
+    }
+    callSignUpAPI() {
+        let ID = this.state.id
+        console.log(this.state)
+        fetch('http://localhost:3001/appendUserInfo', {
+            method: 'POST',
+            headers:{
+                'Accept': 'application/json',
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({
+                id: ID,
+                pw: this.state.pw,
+                pw2: this.state.pw2,
+                info: this.state.Info,
+                color: this.state.color
+            })
+        })
+        //.then(res => res.text())
+        //.then(res => console.log(res))
+        .catch(err => console.log(err))
     }
     logout() {
         this.setState({
@@ -112,10 +135,14 @@ class Top extends Component {
     }
     handlesubmit(i) {
         //console.log(this.state)
-        this.callSendLoginAPI()
+        if(i==='login')this.callSendLoginAPI()
+        else if(i==='signin') this.callSignUpAPI()
         this.setState({
             id:'',
-            pw:''
+            pw:'',
+            pw2: '',
+            Info: '',
+            color: '',
         })
     }
     
@@ -154,18 +181,27 @@ class Top extends Component {
                         <img src={logo} />
                         <div>
                             <h5>ID</h5>
-                            <input name='id' value={this.state.id} ></input>
+                            <input name='id' value={this.state.id} onChange={(evt)=>this.handleInput(evt)}></input>
                         </div>
                         <div>
                             <h5>Password</h5>
-                            <input name='pw'value={this.state.pw} style={{'font-family':'password'}}></input>
+                            <input name='pw'value={this.state.pw} style={{'font-family':'password'}}onChange={(evt)=>this.handleInput(evt)}></input>
                         </div>
                         <div>
                             <h5>Password again</h5>
-                            <input name='pw2'value={this.state.pw} style={{'font-family':'password'}}></input>
+                            <input name='pw2'value={this.state.pw2} style={{'font-family':'password'}} onChange={(evt)=>this.handleInput(evt)}></input>
+                        </div>
+                        <div>
+                            <h5>Info</h5>
+                            <input name='Info'value={this.state.Info} onChange={(evt)=>this.handleInput(evt)}></input>
+                        </div>
+                        <div>
+                            <h5>background color </h5>
+                            <a href='https://www.ifreesite.com/color/'>reference this~</a>
+                            <input name='color'value={this.state.color} onChange={(evt)=>this.handleInput(evt)}></input>
                         </div>
                         
-                        <button className='Jumpout_submit' onClick={() => this.handlesubmit('signin')}>Log in</button>
+                        <button className='Jumpout_submit' onClick={() => this.handlesubmit('signin')}>Sign up</button>
                     </div>
                 </div>
                 <div className='Drawing_Top_header'>
