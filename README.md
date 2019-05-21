@@ -7,7 +7,6 @@
 - `cd midterm_Drawing`
 - `npm install`
 - `npm start`
-- 將網址後面加上/explore
 
 ## How to use?
 - 首頁的三個區塊會隨機推薦使用者（但因為現在只有5個使用者，所以很容易有重複的）
