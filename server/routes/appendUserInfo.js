@@ -46,6 +46,7 @@ router.post('/', (req, res, next) => {
                     }
                 }
                 append_user(user_obj, id);
+                res.send("Success! renew the page and log in:)")
             } 
     }});//should be modified into writeSync some day
 

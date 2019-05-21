@@ -143,7 +143,8 @@ class Top extends Component {
             pw:'',
             pw2: '',
             Info: '',
-            color: '',
+            color: '#',
+            signupInfo:''
         })
     }
     
@@ -202,7 +203,7 @@ class Top extends Component {
                             <input name='color'value={this.state.color} onChange={(evt)=>this.handleInput(evt)}></input>
                         </div>
                         <div>
-                            <h6>{this.state.signupInfo}</h6>
+                            <h6 id='signupInfo'>{this.state.signupInfo}</h6>
                         </div>
                         <button className='Jumpout_submit' onClick={() => this.handlesubmit('signin')}>Sign up</button>
                     </div>

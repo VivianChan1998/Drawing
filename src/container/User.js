@@ -179,10 +179,13 @@ class User extends Component {
         return (
             <div>
                 <div className='NONEdisplay User_jumpout' id='display' >
-                    <div className='Jumpout_window User_jumpoutWindow'>
-                        <button className='Jumpout_x' onClick={() => this.jumpoutclose('display')}>X</button>
-                        <img src={this.state.display}></img>
+                    <div className='User_display'>
+                        <div className='User_displayWindow'>
+                            <button className='Jumpout_x' onClick={() => this.jumpoutclose('display')}>X</button>
+                            <img src={this.state.display}></img>
+                        </div>
                     </div>
+                    
                 </div>
 
                 <div className='NONEdisplay User_jumpout' id='upload' >
