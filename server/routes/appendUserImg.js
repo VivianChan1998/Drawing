@@ -22,7 +22,7 @@ router.post('/', (req, res, next) => {
         AllDatastr = JSON.stringify(AllData, null, 4); //convert it back to json
         fs.writeFile(__dirname + '/UserImg.json', AllDatastr, (err) => {
             if(err) console.log(err)
-            res.send('done')
+            res.send('Success!')
         }); // write it back 
     }});//should be modified into writeSync some day
 

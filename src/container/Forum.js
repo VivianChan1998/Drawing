@@ -6,9 +6,12 @@ import notdoneImg from '../img/notdone.png'
 
 class Forum extends Component {
     render() {
+        var title = {
+            'filter': 'drop-shadow(-0px -0px 10px rgba(60, 74, 122, 0.877) )'
+        }
         return  (
             <div>
-                <TopTitle text='Discuss skills and fun things' />
+                <TopTitle text='Discuss skills and fun things' style={title}/>
                 <TopTab />
                 <div className='Forum_container Drawing_Top_container' >
                     <div className='section_not_complete'>

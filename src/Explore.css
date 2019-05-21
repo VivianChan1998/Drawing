@@ -13,7 +13,7 @@
     white-space:nowrap;
     overflow: hidden;
     color: white;
-    /*filter: drop-shadow(-0px -0px 10px rgba(122, 60, 86, 0.877) );*/
+    /*filter: drop-shadow(-0px -0px 10px rgba(120, 60, 122, 0.877) );*/
     z-index: 1;
 }
 .Explore_body_list {

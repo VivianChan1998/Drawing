@@ -1,29 +1,44 @@
 {
-  "users":[
-    {
-      "ID": "1",
-      "NAME": "Juice",
-      "NEWPIC": {
-        "IMG": "https://i.imgur.com/5Pn67HZ.jpg",
-        "TITLE": "yoyoyoyoyoyo"
-      }
-    },
-    {
-      "ID": "2",
-      "NAME": "AtkBear",
-      "NEWPIC": {
-        "IMG": "https://i.imgur.com/z0Jcglc.jpg",
-        "TITLE": "yoyoyoyoyoyo"
-      }
-    },
-    {
-      "ID": "3",
-      "NAME": "Avacado",
-      "NEWPIC": {
-        "IMG": "https://i.imgur.com/5TjX8j1.png",
-        "TITLE": "yoyoyoyoyoyo"
-      }
-    }
-  ]
-    
+    "users": [
+        {
+            "ID": "1",
+            "NAME": "Juice",
+            "NEWPIC": {
+                "IMG": "https://i.imgur.com/5Pn67HZ.jpg",
+                "TITLE": "yoyoyoyoyoyo"
+            }
+        },
+        {
+            "ID": "2",
+            "NAME": "AtkBear",
+            "NEWPIC": {
+                "IMG": "https://i.imgur.com/z0Jcglc.jpg",
+                "TITLE": "yoyoyoyoyoyo"
+            }
+        },
+        {
+            "ID": "3",
+            "NAME": "Avacado",
+            "NEWPIC": {
+                "IMG": "https://i.imgur.com/5TjX8j1.png",
+                "TITLE": "yoyoyoyoyoyo"
+            }
+        },
+        {
+            "ID": 4,
+            "NAME": "Senmi1864",
+            "NEWPIC": {
+                "IMG": "https://i.imgur.com/t8GzBcc.jpg",
+                "TITLE": "New user!"
+            }
+        },
+        {
+            "ID": 4,
+            "NAME": "Sample",
+            "NEWPIC": {
+                "IMG": "https://i.imgur.com/2bgT7iM.gif",
+                "TITLE": "New user!"
+            }
+        }
+    ]
 }

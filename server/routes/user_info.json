@@ -20,11 +20,18 @@
             "bg": "#A5ABC0"
         }
     },
-    "OWO": {
+    "Senmi1864": {
         "PW": "123",
-        "Info": "OWOWOWOWO",
+        "Info": "Tori",
         "Style": {
-            "bg": "#123456"
+            "bg": "#99CCCC"
+        }
+    },
+    "Sample": {
+        "PW": "123",
+        "Info": "Sample",
+        "Style": {
+            "bg": "#003333"
         }
     }
 }

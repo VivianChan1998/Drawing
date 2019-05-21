@@ -17,6 +17,46 @@
     
 }
 
+.User_head_container button {
+    position: relative;
+    float: right;
+    margin: 50px;
+    z-index: 3;
+    width: 100px;
+    height: 50px;
+    background: rgba(248, 248, 248, 0.253);
+    font-size: 18px;
+    color: white;
+    border: solid 2px;
+    border-radius: 5px;
+    border-color: white;
+}
+
+.User_head_container button:hover {
+    animation: color-changing 4s infinite; 
+}
+
+@keyframes color-changing {
+    0%{
+        background: rgb(255, 109, 109)
+    }
+    20%{
+        background: rgb(255, 190, 105)
+    }
+    40%{
+        background: rgb(183, 247, 154)
+    }
+    60%{
+        background: rgb(109, 189, 255)
+    }
+    80%{
+        background: rgb(153, 109, 255)
+    }
+    100%{
+        background: rgb(255, 109, 109)
+    }
+}
+
 .User_no_tab{
     position: relative;
     width: 100%;
@@ -36,6 +76,27 @@
     background: rgba(58, 58, 58, 0.938);
     animation: none;
     
+}
+
+.User_jumpout .User_upload {
+    height: 60%;
+    background: rgba(61, 83, 102, 0.877)
+}
+
+
+
+.User_upload h3 {
+    position: relative;
+    color: white;
+    margin: 20px;
+    font-size: 40px;
+}
+
+.User_upload .User_SelectFile input {
+    border: none;
+    border-radius: 0px;
+    height: 50px;
+    background: none;
 }
 
 .User_body_container {
@@ -127,3 +188,4 @@
     transition: all 3s;
     background: linear-gradient(140deg, rgba(231, 222, 222, 0.288), rgba(255, 255, 255, 0))
 }
+

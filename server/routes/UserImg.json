@@ -1,113 +1,142 @@
 {
-    "Juice":[
+    "Juice": [
         {
-            "source":"https://i.imgur.com/5Pn67HZ.jpg",
-            "title":"WOW",
-            "content":"hello there"
+            "source": "https://i.imgur.com/5Pn67HZ.jpg",
+            "title": "WOW",
+            "content": "hello there"
         },
         {
-            "source":"https://i.imgur.com/ABbrICp.jpg",
-            "title":"WOW",
-            "content":"hello there"
+            "source": "https://i.imgur.com/ABbrICp.jpg",
+            "title": "WOW",
+            "content": "hello there"
         },
         {
-            "source":"https://i.imgur.com/HHw3utm.jpg",
-            "title":"WOW",
-            "content":"hello there"
+            "source": "https://i.imgur.com/HHw3utm.jpg",
+            "title": "WOW",
+            "content": "hello there"
         },
         {
-            "source":"https://i.imgur.com/uQVXqxl.jpg",
-            "title":"WOW",
-            "content":"hello there"
+            "source": "https://i.imgur.com/uQVXqxl.jpg",
+            "title": "WOW",
+            "content": "hello there"
         },
         {
-            "source":"https://i.imgur.com/i5tru5b.jpg",
-            "title":"WOW",
-            "content":"hello there"
+            "source": "https://i.imgur.com/i5tru5b.jpg",
+            "title": "WOW",
+            "content": "hello there"
         },
         {
-            "source":"https://i.imgur.com/WEuwl2M.jpg",
-            "title":"WOW",
-            "content":"hello there"
+            "source": "https://i.imgur.com/WEuwl2M.jpg",
+            "title": "WOW",
+            "content": "hello there"
         },
         {
-            "source":"https://i.imgur.com/ExJkfXh.png",
-            "title":"WOW",
-            "content":"hello there"
+            "source": "https://i.imgur.com/ExJkfXh.png",
+            "title": "WOW",
+            "content": "hello there"
         }
     ],
-    "AtkBear":[
+    "AtkBear": [
         {
-            "source":"https://i.imgur.com/gfjDJIQ.jpg",
-            "title":"WOW",
-            "content":"hello there"
+            "source": "https://i.imgur.com/gfjDJIQ.jpg",
+            "title": "WOW",
+            "content": "hello there"
         },
         {
-            "source":"https://i.imgur.com/5xoEJd6.jpg",
-            "title":"WOW",
-            "content":"hello there"
+            "source": "https://i.imgur.com/5xoEJd6.jpg",
+            "title": "WOW",
+            "content": "hello there"
         },
         {
-            "source":"https://i.imgur.com/AGpH7dM.jpg",
-            "title":"WOW",
-            "content":"hello there"
+            "source": "https://i.imgur.com/AGpH7dM.jpg",
+            "title": "WOW",
+            "content": "hello there"
         },
         {
-            "source":"https://i.imgur.com/OjgGl9J.jpg",
-            "title":"WOW",
-            "content":"hello there"
+            "source": "https://i.imgur.com/OjgGl9J.jpg",
+            "title": "WOW",
+            "content": "hello there"
         },
         {
-            "source":"https://i.imgur.com/WBpB3jH.jpg",
-            "title":"WOW",
-            "content":"hello there"
+            "source": "https://i.imgur.com/WBpB3jH.jpg",
+            "title": "WOW",
+            "content": "hello there"
         },
         {
-            "source":"https://i.imgur.com/z0Jcglc.jpg",
-            "title":"WOW",
-            "content":"hello there"
+            "source": "https://i.imgur.com/z0Jcglc.jpg",
+            "title": "WOW",
+            "content": "hello there"
         },
         {
-            "source":"https://i.imgur.com/9tmrY5L.jpg",
-            "title":"WOW",
-            "content":"hello there"
+            "source": "https://i.imgur.com/9tmrY5L.jpg",
+            "title": "WOW",
+            "content": "hello there"
         }
     ],
     "Avacado": [
         {
-            "source":"https://i.imgur.com/5TjX8j1.png",
-            "title":"WOW",
-            "content":"hello there"
+            "source": "https://i.imgur.com/5TjX8j1.png",
+            "title": "WOW",
+            "content": "hello there"
         },
         {
-            "source":"https://i.imgur.com/3cG7z4b.png",
-            "title":"WOW",
-            "content":"hello there"
+            "source": "https://i.imgur.com/3cG7z4b.png",
+            "title": "WOW",
+            "content": "hello there"
         },
         {
-            "source":"https://i.imgur.com/7KPv3GV.png",
-            "title":"WOW",
-            "content":"hello there"
+            "source": "https://i.imgur.com/7KPv3GV.png",
+            "title": "WOW",
+            "content": "hello there"
         },
         {
-            "source":"https://i.imgur.com/bIPZtnC.png",
-            "title":"WOW",
-            "content":"hello there"
+            "source": "https://i.imgur.com/bIPZtnC.png",
+            "title": "WOW",
+            "content": "hello there"
         },
         {
-            "source":"https://i.imgur.com/YJcQpgP.png",
-            "title":"WOW",
-            "content":"hello there"
+            "source": "https://i.imgur.com/YJcQpgP.png",
+            "title": "WOW",
+            "content": "hello there"
         },
         {
-            "source":"https://i.imgur.com/35drVh6.png",
-            "title":"WOW",
-            "content":"hello there"
+            "source": "https://i.imgur.com/35drVh6.png",
+            "title": "WOW",
+            "content": "hello there"
         },
         {
-            "source":"https://i.imgur.com/ERl82Tg.png",
-            "title":"WOW",
-            "content":"hello there"
+            "source": "https://i.imgur.com/ERl82Tg.png",
+            "title": "WOW",
+            "content": "hello there"
+        }
+    ],
+    "Senmi1864": [
+        {
+            "source": "https://i.imgur.com/C0mD6o0.png",
+            "title": "First post",
+            "content": "~~"
+        },
+        {
+            "source": "https://i.imgur.com/Y1M7Zlh.jpg",
+            "title": "Second post",
+            "content": "hey"
+        },
+        {
+            "source": "https://i.imgur.com/t8GzBcc.jpg",
+            "title": "Third post",
+            "content": "hey"
+        },
+        {
+            "source": "https://i.imgur.com/vJ3a0YD.jpg",
+            "title": "4",
+            "content": "ya"
+        }
+    ],
+    "Sample": [
+        {
+            "source": "https://i.imgur.com/0FpAOKn.gif",
+            "title": "Smith",
+            "content": "Smith chart!!!"
         }
     ]
 }

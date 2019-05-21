@@ -186,8 +186,9 @@ class User extends Component {
                 </div>
 
                 <div className='NONEdisplay User_jumpout' id='upload' >
-                    <div className='Jumpout_window User_jumpoutWindow'>
+                    <div className='User_upload Jumpout_window User_jumpoutWindow'>
                         <button className='Jumpout_x' onClick={() => this.jumpoutclose('upload')}>X</button>
+                        <h3>New Post</h3>
                         <div>
                             <h5>Title</h5>
                             <input name='Title' onChange={this.newpostTitleHandler} ></input>
@@ -197,7 +198,7 @@ class User extends Component {
                             <input name='Content' onChange={this.newpostContentHandler} style={{'font-family':'password'}}></input>
                         </div>
 
-                        <div>
+                        <div className='User_SelectFile'>
                             <h5>Select file</h5>
                             <input type='file' onChange={this.fileSelectHandler}></input>
                         </div>

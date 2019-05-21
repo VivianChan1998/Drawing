@@ -1,6 +1,11 @@
 based on burkeholland/express-react-starter
 https://github.com/burkeholland/express-react-starter
 
+#### things left to do
+- sign in half way done
+- give key to list items
+- css maintain
+
 
 
 # Express React Starter

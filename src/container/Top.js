@@ -31,11 +31,12 @@ class Top extends Component {
             pw:'',
             pw2: '',
             Info: '',
-            color: '',
+            color: '#',
             LoginID: '',
+            signupInfo: '',
             HelloMessage: <span className='Drawing_Top_header_button'>Hello! Guest </span>,
             StatusButton: <button className='Drawing_Top_header_button status_button' onClick={() => this.jumpout('login')} >Login</button>,
-            SigninButton: <button className='Drawing_Top_header_button status_button' onClick={() => this.jumpout('signin')}>Sign in</button>
+            SigninButton: <button className='Drawing_Top_header_button status_button' onClick={() => this.jumpout('signin')}>Sign up</button>
         }
     }
     callAPI() {
@@ -121,8 +122,8 @@ class Top extends Component {
                 color: this.state.color
             })
         })
-        //.then(res => res.text())
-        //.then(res => console.log(res))
+        .then(res => res.text())
+        .then(res => this.setState({signupInfo: res}))
         .catch(err => console.log(err))
     }
     logout() {
@@ -130,7 +131,7 @@ class Top extends Component {
             LoginID: '',
             HelloMessage: <span className='Drawing_Top_header_button'>Hello! Guest </span>,
             StatusButton: <button className='Drawing_Top_header_button status_button' onClick={() => this.jumpout('login')} >Login</button>,
-            SigninButton: <button className='Drawing_Top_header_button status_button' onClick={() => this.jumpout('signin')}>Sign in</button>
+            SigninButton: <button className='Drawing_Top_header_button status_button' onClick={() => this.jumpout('signin')}>Sign up</button>
         })
     }
     handlesubmit(i) {
@@ -176,7 +177,7 @@ class Top extends Component {
                     </div>
                 </div>
                 <div className='Jumpout_whole NONEdisplay' id='signin'>
-                    <div className='Jumpout_window'>
+                    <div className='Jumpout_window Jumpout_signup'>
                         <button className='Jumpout_x' onClick={() => this.jumpoutclose('signin')}>X</button>
                         <img src={logo} />
                         <div>
@@ -189,23 +190,28 @@ class Top extends Component {
                         </div>
                         <div>
                             <h5>Password again</h5>
-                            <input name='pw2'value={this.state.pw2} style={{'font-family':'password'}} onChange={(evt)=>this.handleInput(evt)}></input>
+                            <input name='pw2' value={this.state.pw2} style={{'font-family':'password'}} onChange={(evt)=>this.handleInput(evt)}></input>
                         </div>
                         <div>
                             <h5>Info</h5>
-                            <input name='Info'value={this.state.Info} onChange={(evt)=>this.handleInput(evt)}></input>
+                            <input name='Info' value={this.state.Info} onChange={(evt)=>this.handleInput(evt)}></input>
                         </div>
                         <div>
-                            <h5>background color </h5>
-                            <a href='https://www.ifreesite.com/color/'>reference this~</a>
+                            <h5>color </h5>
+                            <a href='https://www.ifreesite.com/color/'>(reference this) </a>
                             <input name='color'value={this.state.color} onChange={(evt)=>this.handleInput(evt)}></input>
                         </div>
-                        
+                        <div>
+                            <h6>{this.state.signupInfo}</h6>
+                        </div>
                         <button className='Jumpout_submit' onClick={() => this.handlesubmit('signin')}>Sign up</button>
                     </div>
                 </div>
                 <div className='Drawing_Top_header'>
-                    <img src={logo} className= 'Drawing_Top_logo'/>
+                    <NavLink  to='/'>
+                        <img src={logo} className= 'Drawing_Top_logo'/>
+                    </NavLink>
+                    
                     <div className='Drawing_Top_button_container'>
                         {this.state.SigninButton}
                         {this.state.StatusButton}

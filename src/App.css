@@ -167,7 +167,7 @@
   filter: drop-shadow(0px 0px 20px, rgba(0, 0, 0, 0.692));
   z-index: 101;
   position: fixed;
-  height: 60%;
+  height: 50%;
   width: 30%;
   margin-left: 35%;
   margin-right: 35%;
@@ -245,6 +245,7 @@
   border-radius: 20px;
   border: solid 2px;
   border-color: #FFFFFF;
+  font-size: 16px;
 }
 
 .Jumpout_submit {
@@ -252,7 +253,7 @@
   bottom: 0;
   margin-left: 35%;
   margin-right: 35%;
-  margin-top: 50px;
+  margin-top: 20px;
   width:30%;
   padding: 10px;
   border: solid 2px;
@@ -264,6 +265,18 @@
 
 .Jumpout_submit:hover {
   background: rgba(255, 255, 255, 0.637);
+}
+
+.Jumpout_signup {
+  width: 40%;
+  height: 80%;
+  margin-left: 30%;
+  margin-right: 30%;
+  margin-top: 5%;
+}
+
+.Jumpout_signup a {
+  color: rgba(59, 59, 59, 0.808);
 }
 
 @keyframes App-logo-spin {
