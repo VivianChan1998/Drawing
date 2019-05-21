@@ -114,20 +114,19 @@
 
 .User_PicItem {
     position: relative;
-    width: 30%;
-    height: 350px;
+    width: 31.3%;
+    padding-top: 31.3%;
     overflow: hidden;
-    float: left;
+    float: right;
     margin: 1%;
-    margin-top: 1.5%;
 }
 
 .User_PicItem_imgcontainer{
     position: absolute;
-    
+    top:0;
     max-width:100%;
     width: 100%;
-    height: 250px;
+    height: 100%;
     object-fit: cover;
     overflow: hidden;
     opacity: 1;
@@ -135,6 +134,7 @@
 }
 .User_PicItem_imgcontainer img{
     position: absolute;
+    min-height: 100%;
     max-height: 150%;
     vertical-align: middle;
     text-align:center;
@@ -143,30 +143,36 @@
     left: 0;
     right: 0;
     bottom: 0;
-
-    border: solid;
-    border-width: 1px;
-    border-color: white;
+    z-index: 3;
     object-fit: cover;
+    transform: translateX(-20%) translateY(0%);
 }
 
 .User_PicItem:hover img{
-    transition: all 5s;
+    transition: all 10s;
     transform-origin: center;
-    transform: translateX(-12%) translateY(0%);
-    height: 200%;
+    transform: translateX(20%) translateY(-0%);
+    transform: scale(1.5);
+    z-index: 4;
+}
+
+.User_PicItem:hover .User_PicItem_text {
+    display: block;
+    z-index: 5;
+    background: rgba(37, 37, 37, 0.541);
 }
 
 .User_PicItem_text{
+    display: none;
     position: absolute;
     width:100%;
-    bottom: 0px;
-    height:100px;
-    padding:15px;
+    height: 100%;
+    top: 0;
+    padding:30px;
     border: solid;
     border-width: 1px;
     border-color: white;
-
+    text-align: center;
     background: none;
     
 }
@@ -182,10 +188,5 @@
 
 .User_PicItem_text h5{
     font-size: 26px;
-}
-
-.User_PicItem:hover .User_PicItem_text{
-    transition: all 3s;
-    background: linear-gradient(140deg, rgba(231, 222, 222, 0.288), rgba(255, 255, 255, 0))
 }
 
